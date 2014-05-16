@@ -23,10 +23,12 @@ Information
 
 
 系统包含如下环境
+
   ==================================
   
   Apache2, Mysql, php5, DzzOffice
   
   ==================================
+
 
 更多关于DzzOffice，请访问 <http://www.dzzoffice.com/> 
