@@ -26,12 +26,11 @@ RUN a2enmod rewrite
 RUN mkdir -p /dzz && rm -fr /var/www/html && ln -s /dzz /var/www/html
 
 # Download DzzOffice
-RUN mkdir /tmp
 RUN wget http://down.dzzoffice.com/dzzoffice1.0/dzzoffice1.0_SC_UTF8_Release20140513.zip -O /tmp/dzzoffice.zip 
-RUN unzip /tmp/dzzoffice.zip 
+RUN unzip /tmp/dzzoffice.zip
 
 # Deploy DzzOffice
-RUN cp -rf /tmp/dzzoffice1.0_SC_UTF8/upload/* /dzz
+RUN cp -rf /dzzoffice1.0_SC_UTF8/upload/* /dzz
 
 RUN chmod -R 777 /dzz/core/config
 RUN chmod -R 777 /dzz/data
@@ -39,6 +38,7 @@ RUN chmod -R 777 /dzz/data
 # Configure SSH
 RUN mkdir /var/run/sshd
 RUN echo 'root:123456'|chpasswd
+ADD sshd_config /etc/ssh/sshd_config
 
 EXPOSE 80 3306 22
 
