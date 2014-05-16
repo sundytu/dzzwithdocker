@@ -26,7 +26,7 @@ Information
 
   ==================================
   
-  Apache2, Mysql, php5, DzzOffice
+  Apache2, Mysql, php5, DzzOffice, SSH
   
   ==================================
 
