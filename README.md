@@ -22,3 +22,11 @@ Information
 当然，你还可以使用SSH登录到docker container中，就如同管理一台ubuntu机器一样管理这个container
 
 
+系统包含如下环境
+  ==================================
+  
+  Apache2, Mysql, php5, DzzOffice
+  
+  ==================================
+
+更多关于DzzOffice，请访问 <http://www.dzzoffice.com/> 
